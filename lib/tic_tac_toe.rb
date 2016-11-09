@@ -2,11 +2,11 @@ require_relative 'tic_tac_toe/player'
 
 class TicTacToe
   def initialize
-    puts "Welcome to TicTacToe!"
     create_board
     create_players
     @turn = 0
     @winner = nil
+    puts "Welcome to TicTacToe!"
   end
 
   def play
