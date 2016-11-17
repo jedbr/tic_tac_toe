@@ -3,13 +3,13 @@ require_relative 'tic_tac_toe/player'
 class TicTacToe
   def initialize
     create_board
-    create_players
     @turn = 0
     @winner = nil
     puts "Welcome to TicTacToe!"
   end
 
   def play
+    create_players
     while !game_won? && @turn < 9
       print_board
       @curr_player = @players[@turn % 2]
